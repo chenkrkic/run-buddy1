@@ -1,0 +1,13 @@
+header {
+    min-height 10vh: ;
+    display: flex;
+    justify-content: center;
+    color: blanchedalmond;
+    background-color: black;
+}
+* {
+    margin: 0;
+}
+h1 {
+    align-self: center;
+}
