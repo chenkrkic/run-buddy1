@@ -135,8 +135,8 @@ section {
   margin-bottom: 35px;
   padding: 0 100px 20px 100px;
   border-bottom: 3px solid;
-  border-color: #39a6b2; */
-}
+  border-color: #39a6b2;
+} */
 .section-title {
   font-size: 55px;
   color: #024e76;
@@ -148,7 +148,7 @@ section {
 .primary-border {
   border-color: #fce138;
 }
-.secondary-border{
+.secondary-border {
   border-color: #39a6b2;
 }
 .steps div {
@@ -256,7 +256,8 @@ section {
   color: #fce138;
   font-size: 32px;
 }
-.contact-info p, .contact-info address {
+.contact-info p,
+.contact-info address {
   margin: 20px 0;
   line-height: 1.5;
   font-size: 20px;
