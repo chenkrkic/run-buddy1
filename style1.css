@@ -63,13 +63,13 @@ section {
 }
 /* Hero style start */
 .hero {
-  background-image: url("assets/image/hero-bg.jpg");
+  background-image: url("assets/image/flipped-hero-image.jpg");
   height: 600px;
   background-position: center;
   background-size: cover;
   position: relative;
 }
-/* Hero style end */
+
 .hero-form {
   color: #024e76;
   background-color: #fce138;
