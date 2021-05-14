@@ -15,19 +15,27 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-image: url("image/flipped-hero-image.jpg");
+  background-size: cover;
+  background-position: 80%;
+  background-attachment: fixed;
 }
 header h1 {
   font-weight: bold;
   font-size: 36px;
   color: #fce138;
   margin: 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
 }
 header a {
   color: #fce138;
   text-decoration: none;
 }
 header nav {
-  margin: 7px auto;
+  margin: 7px 0;
 }
 /* header nav ul li {
   display: inline;
@@ -40,9 +48,16 @@ header nav ul {
   list-style: none;
 }
 header nav ul li a {
-  padding: 10 15px;
+  padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+}
+header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
 }
 footer {
   background: #fce138;
@@ -72,12 +87,13 @@ section {
 /* Hero style start */
 .hero {
   background-image: url("image/flipped-hero-image.jpg");
-  background-position: center;
+  background-position: 80%;
   background-size: cover;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
+  background-attachment: fixed;
 }
 
 .hero-form {
@@ -86,8 +102,32 @@ section {
   padding: 20px;
   border: 3px solid #024e76;
   width: 40%;
-  margin: 3.5%
+  margin: 3.5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
 }
+.hero-form button:hover {
+background-color: #39a6b2;
+}
+.form-input {
+  border-radius: 10px;
+}
+
+.hero-form button {
+  border-radius: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+  border-radius: 10px;
+}
+
+.contact-form button {
+  border-radius: 10px;
+}
+.contact-form button:hover{
+  color: #fce138;
+  background: #39a6b2;
+} 
 .hero-form h3 {
   font-size: 24px;
   margin: 0px;
@@ -103,6 +143,11 @@ section {
   color: #024e76;
   width: 100%;
   margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.form-input:focus {
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
 }
 .hero-form label {
   margin: 0 5px;
@@ -167,12 +212,18 @@ section {
   margin: 50px auto;
   padding-bottom: 50px;
   width: 80%;
-  border-bottom: 1px solid #39a6b2;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #39a6b2;
 }
+.step:last-child {
+  border-bottom: none;
+}
+/* .step:nth-child(even) {
+  border-bottom: 1px solid #39a6b2;
+} */
 .step-info{
   display: flex;
   flex-wrap: wrap;
@@ -271,9 +322,9 @@ section {
   flex: 1;
   margin: 15px;
 }
-.contact-info iframe {
+/* .contact-info iframe {
 
-}
+} */
 .contact-info div {
   width: 410px;
   display: inline-block;
@@ -304,6 +355,13 @@ section {
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
+}
+.contact-form {
+  background-color: rgba(255, 255, 255, 1);
+}
+.contact-form input:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+  outline: none;
 }
 .contact-form button {
   width: 100%;
@@ -341,16 +399,24 @@ section {
   font-style: italic;
   font-size: 55px;
   color: #fce138;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
 }
 
 .flex-row {
   display: flex;
 }
+/* .some-class {
+  text-shadow: 5px 10px 15px black;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.25);
+} */
+
+
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
   header {
     padding-bottom: 0;
     justify-content: center;
+    position: relative;
   }
   header h1 {
     width: 100%;
